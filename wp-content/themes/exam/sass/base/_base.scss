@@ -1,0 +1,67 @@
+.container {
+    margin: 0 auto;
+    padding: 0 25px;
+    @media all and (min-width: $lg) {
+        max-width: 1170px;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+*:hover {
+    transition: all 0.5s ease;
+}
+
+.button {
+    padding: 20px 40px;
+    font: 16px $main-font;
+    background: $main-color;
+    border: 3px solid #fed52f;
+    color: $dark-color;
+    text-transform: uppercase;
+    &:hover {
+        border: 3px solid $main-color;
+        background: $lite-color;
+        color: $dark-color;
+    }
+}
+
+.heading {
+    text-align: center;
+    h3 {
+        font: 700 25px $main-font;
+        color: $dark-color;
+    }
+}
+
+@media all and (min-width: $md) {
+    .heading {
+        h3 {
+            font: 900 40px $main-font;
+        }
+    }
+}
+
+.reed-more {
+    padding-bottom: 30px;
+    font: 16px $main-font;
+    color: $main-color;
+    text-transform: uppercase;
+    @media all and (min-width: $md) {
+        padding-bottom: 90px;
+    }
+}

@@ -1,0 +1,108 @@
+
+.site-branding h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    a {
+        display: block;
+        max-width: 131px;
+    }
+}
+
+.logo-nav {
+        .site-branding {
+            float: left;
+        }
+        .main-navigation {
+            float: right;
+            padding-top: 30px;
+        }
+}
+
+.menu-bat {
+    display: block;
+    padding-top: 3px;
+    font-size: 27px;
+    color: $lite-color;
+    @media all and (min-width: $sm) {
+        padding-left: 50px;
+    }
+    @media all and (min-width: $md) {
+        display: none;
+    }
+}
+
+ul.welcome-list {
+    display: none;
+    background: $dark-color;
+    position: absolute;
+    top: 106px;
+    left: 20px;
+    right: 20px;
+    list-style: none;
+    padding-left: 0;
+    a{
+        display: block;
+        padding: 15px 80px;
+        text-align: center;
+        font: 900 16px $main-font;
+        color: $lite-color;
+        text-transform: uppercase;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    @media all and (min-width: $md) {
+        display: block;
+        margin-top: 0;
+        padding-top: 5px;
+        padding-left: 95px;
+        position: inherit;
+        background: none;
+        li {
+            display: inline-block;
+            padding-right: 25px;
+            a {
+                padding: 5px 10px;
+                border-radius: 15px;
+                text-transform: none;
+
+            }
+        }
+
+    }
+}
+
+.content-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: $lite-color;
+    .site-name {
+    font: 700 27px $main-font;
+    }
+    .welcome-description {
+        font: 700 18px $main-font;
+    }
+    .welcome-button {
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+}
+
+@media all and (min-width: $md) {
+    .content-header {
+        padding-top: 70px;
+        padding-bottom: 100px;
+        .site-name {
+            font: 700 60px $main-font;
+        }
+        .welcome-description {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+    }
+    .welcome-button {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,149 @@
+.process {
+    text-align: center;
+}
+
+.process-list {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+
+    li {
+        .process-img {
+            max-width: 156px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media all and (min-width: $md) {
+    .process-list {
+            display: flex;
+            justify-content: space-between;
+        padding-bottom: 50px;
+        li {
+            padding: 0 35px;
+        }
+    }
+}
+///// section about
+.about-content {
+    text-align: center;
+    padding-top: 10px;
+}
+@media all and (min-width: $md) {
+    .about-content {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        text-align: left;
+        .kontent {
+            max-width: 460px;
+        }
+    }
+    .about-img {
+        float: right;
+        width: 50%;
+    }
+}
+
+// section candidate
+.candidate-section {
+    text-align: center;
+    padding-bottom: 40px;
+    @media all and (min-width: $md) {
+        padding-bottom: 100px;
+    }
+}
+
+.candidate {
+    list-style: none;
+    padding-left: 0;
+    .candidate-content {
+        a {
+            font: 700 22px $main-font;
+            color: $dark-color;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+}
+
+@media all and (min-width: $md) {
+    .candidate {
+        li {
+            max-width: 33.3%;
+            box-sizing: border-box;
+            float: left;
+            padding-left: 17px;
+            padding-right: 17px;
+            .candidate-img {
+                position: relative;
+                .candidate-hover {
+                    display: none;
+                    &:hover {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background-color: red;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: $md) {
+    .candidate-content {
+        text-align: left;
+        a {
+            font-size: 24px;
+        }
+    }
+}
+
+/////// section build
+
+.build {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.build-wrap {
+    text-align: center;
+    color: $dark-color;
+    h3 {
+        font: 700 30px $main-font;
+    }
+    p {
+        font: 700 18px $main-font;
+        padding-bottom: 45px;
+    }
+    .build-button {
+        margin-bottom: 30px;
+    }
+}
+
+@media all and (min-width: $md) {
+    .build {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .build-wrap {
+            text-align: left;
+            h3 {
+                font-size: 60px;
+            }
+            p {
+                max-width: 440px;
+                padding-bottom: 60px;
+            }
+            .build-button {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
